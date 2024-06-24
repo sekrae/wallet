@@ -43,14 +43,14 @@ docker-compose exec web python manage.py loaddata start.json
 
 Тестировать лучше всего с Postman.
 Реализованы функционалы:
-1. Снятие со счета "localhost/api/v1/withdraw/" передаем json:
+1. Снятие со счета "localhost:8000/api/v1/withdraw/" передаем json:
 ```
 {
     "account_number": 987654321,
     "amount": 1000
 }
 ```
-2. Перевод с одного счета на другой "localhost/api/v1/transfer/"
+2. Перевод с одного счета на другой "localhost:8000/api/v1/transfer/"
 ```
 {
     "from_account_number": 123456789,
@@ -58,10 +58,14 @@ docker-compose exec web python manage.py loaddata start.json
     "amount": 2000
 }
 ```
-3. Пополнение счета "localhost/api/v1/deposit/"
+3. Пополнение счета "localhost:8000/api/v1/deposit/"
 ```
 {
     "account_number": 987654321,
     "amount": 5000
 }
 ```
+
+4. Админка "localhost:8000/admin/
+   Login: user
+   Password: 123
