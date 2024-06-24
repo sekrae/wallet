@@ -1,0 +1,10 @@
+.venv/
+.idea/
+**/__pycache__/
+
+app/entrypoint.sh
+app/entrypoint.prod.sh
+
+.env.prod
+.env.prod.db
+
