@@ -67,5 +67,5 @@ docker-compose exec web python manage.py loaddata start.json
 ```
 
 4. Админка "localhost:8000/admin/
-   Login: user
-   Password: 123
+5. Login: user
+6. Password: 123
